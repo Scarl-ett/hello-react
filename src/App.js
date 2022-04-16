@@ -1,25 +1,101 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// function App() {
+// const name = '리액트';
+// return (
+//   <div>
+//     {name === '리액트' ? (
+//       <h1>리액트입니다.</h1>
+//     ) : (
+//       <h2>리액트가 아닙니다.</h2>
+//     )}
+//   </div>
+// )
+
+// return <div>{name === '리액트' ? <h1>리액트입니다.</h1> : null}</div>
+
+// return <div>{name === '리액트' && <h1>리액트입니다.</h1>}</div>
+
+// const number = 0;
+
+// return number && <div>내용</div>
+
+// const name = undefined;
+// return name || '값이 undefined입니다.';
+
+// return <div>{name || '리액트'}</div>
+
+// const name = '리액트';
+// const style = {
+//   backgroundColor : 'black',
+//   color : 'aqua',
+//   fontSize : '48px',
+//   fontWeight : 'bold',
+//   padding : 16
+// };
+
+// return <div style={style}>{name}</div>
+
+// return (
+//   <div
+//     style={{
+//       backgroundColor : 'black',
+//       color : 'aqua',
+//       fontSize : '48px',
+//       fontWeight : 'bold',
+//       padding : 16
+//     }}
+//   >
+//     {name}
+//   </div>
+// );
+// return <div className="react">{name}</div>
+
+// return (
+//   <>
+//     <div className="react">{name}</div>
+//     <input/>
+//   </>
+// );
+
+// return (
+//   <>
+//     {/* 주석은 이렇게 작성합니다. */}
+//     <div className="react" // 시작 태그를 여러 줄로 작성하게 된다면 여기에 주석을 작성할 수 있습니다.
+//     >
+//       {name}
+//     </div>
+//     // 하지만 이런 주석이나
+//     /* 이런 주석은 페이지에 그대로 나타나게 됩니다. */
+//     <input/>
+//   </>
+// );
+
+// return (
+//   <div>
+//     <div className="react">{
+//       name
+//     }</div>
+//     <h1>들여쓰기가 이상한</h1>
+//     <h2>코드</h2>
+//     <p>입니다.</p>
+//   </div>
+// )
+// }
+
+// import React, { Component } from 'react';
+
+// class App extends Component {
+//   render() {
+//     const name = 'react';
+//     return <div className="react">{name}</div>;
+//   }
+// }
+
+import MyComponent from './MyComponent';
+
+const App = () => {
+  return <MyComponent name="React" favoriteNumber={1}>리액트</MyComponent >;
+};
 
 export default App;
